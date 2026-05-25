@@ -1,4 +1,6 @@
 ---
+layout: article.njk
+tags: matrimoni
 title: Francesca e Mauro – Matrimonio in Toscana tra gli Scavi Etruschi e la Via
   Lattea alle Tre Fonti
 slug: matrimonio-toscana-grosseto-le-tre-fonti-francesca-mauro
