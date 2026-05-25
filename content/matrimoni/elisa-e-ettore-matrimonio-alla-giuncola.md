@@ -21,7 +21,7 @@ gallery:
   - /images/uploads/img_7747.jpg
   - /images/uploads/img_7715.jpg
   - /images/uploads/img_7762.jpg
-  - ---
+  ---
   Il matrimonio di Ettore e Elisa è iniziato nelle loro case private, tra preparativi intimi, dettagli personali e l’attesa prima della cerimonia. La mattina ha mantenuto un’atmosfera autentica e discreta, lontana dalle costruzioni troppo artificiali, lasciando spazio a momenti reali e spontanei.
 
 
