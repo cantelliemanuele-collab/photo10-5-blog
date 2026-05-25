@@ -1,8 +1,10 @@
 backend:
   name: git-gateway
   branch: main
+
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
+
 collections:
   - name: "matrimoni"
     label: "Racconti di matrimonio"
@@ -11,11 +13,18 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Titolo", name: "title", widget: "string" }
-      - { label: "Slug URL", name: "slug", widget: "string" }
+      - { label: "Slug URL", name: "slug", widget: "string", hint: "Esempio: elisa-ettore-wedding-tuscany" }
       - { label: "Data", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
       - { label: "Location", name: "location", widget: "string", required: false }
       - { label: "Descrizione SEO", name: "description", widget: "text", required: false }
       - { label: "Foto copertina", name: "cover", widget: "image", required: false }
       - { label: "Tag / keyword", name: "tags", widget: "list", required: false }
-      - { label: "Galleria immagini", name: "gallery", widget: "list", required: false, field: {label: "Immagine", name: "image", widget: "image"} }
+      - label: "Galleria immagini"
+        name: "gallery"
+        widget: "list"
+        required: false
+        field:
+          label: "Immagine"
+          name: "image"
+          widget: "image"
       - { label: "Racconto", name: "body", widget: "markdown" }
