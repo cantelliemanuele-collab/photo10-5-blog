@@ -1,14 +1,13 @@
 ---
 layout: article.njk
-tags: matrimoni
 title: Elisa e Ettore-Matrimonio alla Giuncola
 slug: matrimoni-elisa-ettore-giuncola-maremma
-permalink: "/matrimoni-elisa-ettore-giuncola-maremma/"
-date: 2026-05-25
+permalink: /matrimoni-elisa-ettore-giuncola-maremma/
+date: 2024-09-14
 location: La Giuncola
-description: >-
-  Elisa & Ettore — Matrimonio alla Giuncola in Toscana
+description: Elisa & Ettore — Matrimonio alla Giuncola in Toscana
 cover: /images/uploads/img_7746.jpg
+tags: matrimoni
 gallery:
   - /images/uploads/img_7716.jpg
   - /images/uploads/img_7722.jpg
