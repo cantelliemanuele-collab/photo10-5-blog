@@ -1,4 +1,5 @@
----
+layout: article.njk
+tags: matrimoni
 title: Elisa e Ettore-Matrimonio alla Giuncola
 slug: matrimoni-elisa-ettore-giuncola-maremma
 date: 2026-05-25
