@@ -12,6 +12,8 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
+      - ⁠{ label: "Layout", name: "layout", widget: "hidden", default: "article.njk" }
+      - { label: "Tags automatici", name: "tags", widget: "hidden", default: "matrimoni" }      
       - { label: "Titolo", name: "title", widget: "string" }
       - { label: "Slug URL", name: "slug", widget: "string", hint: "Esempio: elisa-ettore-wedding-tuscany" }
       - { label: "Data", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
