@@ -12,9 +12,9 @@ description: Matrimonio a Campagnatico presso Villa Bellaria, nel cuore della
   storico e ricevimento panoramico immerso nelle colline grossetane. Servizio
   realizzato da Photo 10.5 di Cantelli Emanuele, fotografo matrimonio Grosseto
   specializzato in reportage emozionale e fotografia naturale in Toscana
-cover: /images/uploads/img_8129.jpg
+cover: /images/uploads/img_8143.jpg
 gallery:
-  - /images/uploads/img_8143.jpg
+  - /images/uploads/img_8129.jpg
   - /images/uploads/img_8130.jpg
   - /images/uploads/img_8134.jpg
   - /images/uploads/img_8142.jpg
