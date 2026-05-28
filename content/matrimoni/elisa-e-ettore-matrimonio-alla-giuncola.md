@@ -1,13 +1,19 @@
 ---
 layout: article.njk
+tags: matrimoni
 title: Elisa e Ettore-Matrimonio alla Giuncola
 slug: matrimoni-elisa-ettore-giuncola-maremma
 permalink: /matrimoni-elisa-ettore-giuncola-maremma/
 date: 2024-09-14
 location: La Giuncola
-description: Elisa & Ettore — Matrimonio alla Giuncola in Toscana
+description: Matrimonio di Ettore e Elisa presso La Giuncola, nel cuore della
+  Maremma Toscana. Un reportage fotografico costruito tra preparativi nelle case
+  private, luce naturale, ritratti immersi nella campagna toscana e atmosfere
+  serali dal carattere cinematografico. Tra gli elementi più distintivi del
+  matrimonio, gli scatti con l’ombrello in pizzo, i riflessi notturni in piscina
+  e il finale con fumogeni colorati. Fotografie di matrimonio autentiche ed
+  emozionali realizzate da Photo 10.5 di Cantelli Emanuele.
 cover: /images/uploads/img_7746.jpg
-tags: matrimoni
 gallery:
   - /images/uploads/img_7716.jpg
   - /images/uploads/img_7722.jpg
