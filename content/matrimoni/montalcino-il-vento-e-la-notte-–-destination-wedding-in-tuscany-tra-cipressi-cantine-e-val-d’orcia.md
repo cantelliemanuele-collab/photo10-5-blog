@@ -1,8 +1,8 @@
 ---
 layout: article.njk
 tags: matrimoni
-title: Montalcino, il Vento e la Notte – Destination Wedding in Tuscany tra
-  Cipressi, Cantine e Val d’Orcia
+title: Sara e Marco    Montalcino, il Vento e la Notte – Destination Wedding in
+  Tuscany tra Cipressi, Cantine e Val d’Orcia
 slug: destination-wedding-montalcino-valdorcia-tuscany
 date: 2021-07-24
 location: la Crociona
