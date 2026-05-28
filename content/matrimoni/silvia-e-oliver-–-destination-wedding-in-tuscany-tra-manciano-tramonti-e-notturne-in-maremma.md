@@ -4,7 +4,7 @@ tags: matrimoni
 title: Silvia e Oliver – Destination Wedding in Tuscany tra Manciano, Tramonti e
   Notturne in Maremma
 slug: destination-wedding-tuscany-manciano-silvia-oliver
-date: 2026-05-28
+date: 2021-08-28
 description: >
   estination wedding in Tuscany tra le colline di Manciano e l’Agriturismo Le
   Chiuse, nel cuore della Maremma Toscana. Il matrimonio internazionale di
