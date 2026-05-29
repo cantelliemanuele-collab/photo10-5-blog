@@ -25,6 +25,8 @@ collections:
         name: "gallery"
         widget: "list"
         required: false
+        collapsed: true
+        summary: "{{fields.image}}"
         field:
           label: "Immagine"
           name: "image"
