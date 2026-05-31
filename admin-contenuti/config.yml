@@ -1,0 +1,105 @@
+backend:
+  name: git-gateway
+  branch: main
+
+locale: "it"
+publish_mode: editorial_workflow
+
+# Gli upload della nuova area sono separati dalle immagini dei racconti.
+media_folder: "images/contenuti"
+public_folder: "/images/contenuti"
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+
+collections:
+  - name: "wedding_guide"
+    label: "Wedding Guide | Guida al Matrimonio"
+    label_singular: "Articolo Wedding Guide"
+    folder: "content/wedding-guide"
+    create: true
+    slug: "{{language}}-{{fields.slug}}"
+    summary: "[{{language}}] {{title}}"
+    preview_path: "wedding-guide/{{language}}/{{fields.slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "content-article.njk" }
+      - { label: "Tags automatici", name: "tags", widget: "hidden", default: "weddingGuide" }
+      - { label: "Articolo IT collegato", name: "translation_of", widget: "hidden", default: "", required: false }
+      - { label: "Titolo", name: "title", widget: "string" }
+      - label: "Lingua obbligatoria"
+        name: "language"
+        widget: "select"
+        required: true
+        default: "it"
+        options:
+          - { label: "[IT] Italiano", value: "it" }
+          - { label: "[EN] English", value: "en" }
+      - { label: "Slug URL", name: "slug", widget: "string", hint: "Solo lettere minuscole, numeri e trattini. Esempio: come-scegliere-fotografo-matrimonio", pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', "Usa soltanto lettere minuscole, numeri e trattini."] }
+      - { label: "Data", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "Categoria", name: "category", widget: "string", required: false }
+      - { label: "Descrizione SEO", name: "description", widget: "text", required: false }
+      - { label: "Foto copertina", name: "cover", widget: "image", required: false }
+      - { label: "Tag / keyword", name: "keywords", widget: "list", required: false }
+      - label: "Galleria immagini"
+        name: "gallery"
+        widget: "list"
+        required: false
+        collapsed: true
+        summary: "{{fields.image}}"
+        field:
+          label: "Immagine"
+          name: "image"
+          widget: "image"
+      - label: "Link correlati"
+        name: "related_links"
+        widget: "list"
+        required: false
+        collapsed: true
+        summary: "{{fields.label}}"
+        fields:
+          - { label: "Etichetta", name: "label", widget: "string", required: false }
+          - { label: "URL interno o esterno", name: "url", widget: "string", hint: "Esempi: /matrimonio-esempio/ oppure https://photo10-5.com", required: true }
+          - { label: "Apri in una nuova scheda", name: "external", widget: "boolean", default: false, required: false }
+      - { label: "Articolo", name: "body", widget: "markdown" }
+
+  - name: "method_photo_10_5"
+    label: "Metodo Photo 10.5"
+    label_singular: "Articolo Metodo Photo 10.5"
+    folder: "content/metodo-photo-10-5"
+    create: true
+    slug: "{{fields.slug}}"
+    summary: "[IT] {{title}}"
+    preview_path: "metodo-photo-10-5/{{fields.slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "content-article.njk" }
+      - { label: "Tags automatici", name: "tags", widget: "hidden", default: "methodPhoto105" }
+      - { label: "Lingua", name: "language", widget: "hidden", default: "it" }
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Slug URL", name: "slug", widget: "string", hint: "Solo lettere minuscole, numeri e trattini. Esempio: fotografia-notturna", pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', "Usa soltanto lettere minuscole, numeri e trattini."] }
+      - { label: "Data", name: "date", widget: "datetime", format: "YYYY-MM-DD" }
+      - { label: "Categoria", name: "category", widget: "string", required: false }
+      - { label: "Descrizione SEO", name: "description", widget: "text", required: false }
+      - { label: "Foto copertina", name: "cover", widget: "image", required: false }
+      - { label: "Tag / keyword", name: "keywords", widget: "list", required: false }
+      - label: "Galleria immagini"
+        name: "gallery"
+        widget: "list"
+        required: false
+        collapsed: true
+        summary: "{{fields.image}}"
+        field:
+          label: "Immagine"
+          name: "image"
+          widget: "image"
+      - label: "Link correlati"
+        name: "related_links"
+        widget: "list"
+        required: false
+        collapsed: true
+        summary: "{{fields.label}}"
+        fields:
+          - { label: "Etichetta", name: "label", widget: "string", required: false }
+          - { label: "URL interno o esterno", name: "url", widget: "string", hint: "Esempi: /matrimonio-esempio/ oppure https://photo10-5.com", required: true }
+          - { label: "Apri in una nuova scheda", name: "external", widget: "boolean", default: false, required: false }
+      - { label: "Articolo", name: "body", widget: "markdown" }

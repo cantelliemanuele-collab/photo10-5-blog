@@ -1,0 +1,36 @@
+---
+layout: content-base.njk
+title: "Wedding Guide | Guida al Matrimonio | Photo 10.5"
+description: "Guide pratiche Photo 10.5 per organizzare il matrimonio e scegliere consapevolmente il racconto fotografico."
+seoType: CollectionPage
+sectionLabel: "Wedding Guide | Guida al Matrimonio"
+sectionUrl: /wedding-guide/
+---
+<header class="header">
+  <div class="brand">PHOTO 10.5</div>
+  <h1>Wedding Guide | Guida al Matrimonio</h1>
+  <p class="subtitle">Guide pratiche in italiano e inglese per accompagnare le scelte legate al matrimonio.</p>
+  <div class="nav">
+    <a class="btn primary" href="https://photo10-5.com">Torna al sito Photo 10.5</a>
+    <a class="btn" href="/">Racconti di matrimonio</a>
+    <a class="btn" href="/metodo-photo-10-5/">Metodo Photo 10.5</a>
+  </div>
+</header>
+<main class="container">
+  {% if collections.weddingGuide and collections.weddingGuide.length %}
+    <div class="grid">
+      {% for post in collections.weddingGuide | reverse %}
+        <article class="card">
+          {% if post.data.cover %}<img src="{{ post.data.cover }}" alt="{{ post.data.title }}" title="{{ post.data.title }}">{% endif %}
+          <div class="card-body">
+            <div class="meta">[{{ post.data.language | upper }}]{% if post.data.category %} · {{ post.data.category }}{% endif %}</div>
+            <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+            <p class="excerpt">{{ post.data.description }}</p>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="note">Le guide saranno pubblicate progressivamente.</p>
+  {% endif %}
+</main>

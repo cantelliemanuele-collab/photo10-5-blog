@@ -1,23 +1,28 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="{{ language or 'it' }}">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% set seoDefaultTitle = "Racconti di matrimonio | Photo 10.5" %}
-    {% set seoDefaultDescription = "Racconti di matrimonio Photo 10.5." %}
+    {% set seoDefaultTitle = "Blog | Photo 10.5" %}
+    {% set seoDefaultDescription = "Contenuti editoriali Photo 10.5." %}
     {% include "seo.njk" %}
     <link rel="stylesheet" href="/assets/style.css">
   </head>
   <body>
     {{ content | safe }}
     <footer class="footer">
-      <a class="btn primary" href="https://photo10-5.com">Torna al sito Photo 10.5</a>
+      <div class="nav">
+        <a class="btn primary" href="https://photo10-5.com">Torna al sito Photo 10.5</a>
+        <a class="btn" href="/">Blog</a>
+        <a class="btn" href="/wedding-guide/">Wedding Guide</a>
+        <a class="btn" href="/metodo-photo-10-5/">Metodo Photo 10.5</a>
+      </div>
       <div class="social-links">
         <a href="https://www.pinterest.com/cantelliemanuele" target="_blank" rel="noopener">📌 Pinterest</a>
         <a href="https://www.instagram.com/emanuelecantelli?igsh=eXMwOHM2djA0ZHlp&utm_source=qr" target="_blank" rel="noopener">📸 Instagram</a>
         <a href="https://www.facebook.com/share/18tvezYCiZ/?mibextid=wwXIfr" target="_blank" rel="noopener">📘 Facebook</a>
       </div>
-      <a class="admin-link" href="/admin/">Area Admin</a>
+      <a class="admin-link" href="/admin-contenuti/">Area Admin Contenuti</a>
       <div class="legal-links">
         <a href="https://photo10-5.com/privacy.html">Privacy Policy</a> |
         <a href="https://photo10-5.com/cookie.html">Cookie Policy</a>

@@ -1,0 +1,36 @@
+---
+layout: content-base.njk
+title: "Metodo Photo 10.5"
+description: "Articoli sul metodo di lavoro Photo 10.5: ricerca fotografica, organizzazione, consulenza e filosofia professionale."
+seoType: CollectionPage
+sectionLabel: "Metodo Photo 10.5"
+sectionUrl: /metodo-photo-10-5/
+---
+<header class="header">
+  <div class="brand">PHOTO 10.5</div>
+  <h1>Metodo Photo 10.5</h1>
+  <p class="subtitle">Una raccolta di articoli sul metodo di lavoro: ricerca fotografica, organizzazione della giornata, consulenza e filosofia professionale.</p>
+  <div class="nav">
+    <a class="btn primary" href="https://photo10-5.com">Torna al sito Photo 10.5</a>
+    <a class="btn" href="/">Racconti di matrimonio</a>
+    <a class="btn" href="/wedding-guide/">Wedding Guide</a>
+  </div>
+</header>
+<main class="container">
+  {% if collections.methodPhoto105 and collections.methodPhoto105.length %}
+    <div class="grid">
+      {% for post in collections.methodPhoto105 | reverse %}
+        <article class="card">
+          {% if post.data.cover %}<img src="{{ post.data.cover }}" alt="{{ post.data.title }}" title="{{ post.data.title }}">{% endif %}
+          <div class="card-body">
+            <div class="meta">[IT]{% if post.data.category %} · {{ post.data.category }}{% endif %}</div>
+            <h2><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+            <p class="excerpt">{{ post.data.description }}</p>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p class="note">Gli articoli sul Metodo Photo 10.5 saranno pubblicati progressivamente.</p>
+  {% endif %}
+</main>

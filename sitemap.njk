@@ -1,0 +1,19 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>{{ "/" | absoluteUrl(site.url) | escape }}</loc></url>
+  <url><loc>{{ "/wedding-guide/" | absoluteUrl(site.url) | escape }}</loc></url>
+  <url><loc>{{ "/metodo-photo-10-5/" | absoluteUrl(site.url) | escape }}</loc></url>
+  {% for item in collections.matrimoni %}
+  <url><loc>{{ item.url | absoluteUrl(site.url) | escape }}</loc></url>
+  {% endfor %}
+  {% for item in collections.weddingGuide %}
+  <url><loc>{{ item.url | absoluteUrl(site.url) | escape }}</loc></url>
+  {% endfor %}
+  {% for item in collections.methodPhoto105 %}
+  <url><loc>{{ item.url | absoluteUrl(site.url) | escape }}</loc></url>
+  {% endfor %}
+</urlset>

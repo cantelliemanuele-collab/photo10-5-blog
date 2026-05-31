@@ -1,0 +1,44 @@
+---
+layout: content-base.njk
+seoType: BlogPosting
+---
+<header class="header">
+  <div class="brand">PHOTO 10.5</div>
+  <div class="meta">[{{ language | upper }}] {{ sectionLabel }}</div>
+  <h1>{{ title }}</h1>
+  <p class="subtitle">{{ description }}</p>
+  <div class="nav">
+    <a class="btn primary" href="https://photo10-5.com">Torna al sito Photo 10.5</a>
+    <a class="btn" href="/">Blog</a>
+    <a class="btn" href="{{ sectionUrl }}">{{ sectionLabel }}</a>
+  </div>
+</header>
+<article class="article">
+  <div class="meta">{% if category %}{{ category }}{% endif %}{% if category and date %} · {% endif %}{% if date %}{{ date }}{% endif %}</div>
+  {% if cover %}<img class="cover" src="{{ cover }}" alt="{{ title }}" title="{{ title }}">{% endif %}
+  <div class="article-content">{{ content | safe }}</div>
+  {% if gallery and gallery.length %}
+    <div class="gallery">
+      {% for item in gallery %}
+        {% if item.image %}<img src="{{ item.image }}" alt="{{ title }}" title="{{ title }}">{% else %}<img src="{{ item }}" alt="{{ title }}" title="{{ title }}">{% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
+  {% if related_links and related_links.length %}
+    <section class="article-content">
+      <h2>Link correlati</h2>
+      <ul>
+        {% for item in related_links %}
+          {% if item.url %}
+            <li><a href="{{ item.url }}"{% if item.external %} target="_blank" rel="noopener"{% endif %}>{{ item.label or item.url }}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+  <div class="nav">
+    <a class="btn primary" href="https://photo10-5.com">Torna al sito Photo 10.5</a>
+    <a class="btn" href="/">Blog</a>
+    <a class="btn" href="{{ sectionUrl }}">{{ sectionLabel }}</a>
+  </div>
+</article>
