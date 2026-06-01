@@ -40,6 +40,12 @@ description: >-
 cover: /images/contenuti/bb4c7c16-f6fe-4ee1-be6a-cfc12fe7820f.jpg
 gallery:
   - /images/contenuti/img_7762.jpg
+  - /images/contenuti/img_8135.jpg
+  - /images/contenuti/d980bdda-4c60-453b-84f2-1064c28501dd.jpg
+  - /images/contenuti/_ang2012.jpg
+  - /images/contenuti/00ffba64-b2d5-45b8-a613-35206b8571d1.jpg
+  - /images/contenuti/_dsc8282.jpg
+  - /images/contenuti/img_7658.jpg
 related_links:
   - external: false
     url: https://photo10-5.com/
